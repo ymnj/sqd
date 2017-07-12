@@ -1,0 +1,68 @@
+
+//NAVIGATION
+
+h1,h2,h3,h4, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  h1 {
+    padding-top: 5%;
+    text-align: center;
+  }
+  
+}
+
+nav {
+  text-align: center;
+  padding: 20px 0;
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    display: inline-block;
+    &:before {
+      content: "/";
+    }
+    &:first-of-type:before {
+      content: "";
+    }
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 27px;
+    }
+  }
+}
+
+//FRONT PAGE BANNER
+
+.top-banner {
+  background: url('./assets/images/front-page-banner.jpg') no-repeat center center / cover;
+  width: 100%;
+  position: relative;
+  height: 960px;
+
+  .join-cta {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: -58px;
+    text-transform: uppercase;
+    background-color: #fff;
+    display: inline-block;
+    padding: 20px;
+  }
+}
+
+
+
+
+
+

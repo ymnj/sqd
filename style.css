@@ -1,1 +1,63 @@
-style.css
+h1, h2, h3, h4, ul, li {
+  margin: 0;
+  padding: 0; }
+
+header h1 {
+  padding-top: 5%;
+  text-align: center; }
+
+nav {
+  text-align: center;
+  padding: 20px 0; }
+  nav ul {
+    list-style-type: none; }
+  nav li {
+    display: inline-block; }
+    nav li:before {
+      content: "/"; }
+    nav li:first-of-type:before {
+      content: ""; }
+    nav li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 27px; }
+
+.top-banner {
+  background: url("./assets/images/front-page-banner.jpg") no-repeat center center/cover;
+  width: 100%;
+  position: relative;
+  height: 960px; }
+  .top-banner .join-cta {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: -58px;
+    text-transform: uppercase;
+    background-color: #fff;
+    display: inline-block;
+    padding: 20px; }
+
+/* Mobile first queries */
+/* Larger than mobile */
+@media (min-width: 400px) {
+  .top-banner {
+    height: 350px; } }
+/* Larger than phablet */
+@media (min-width: 550px) {
+  .top-banner {
+    height: 500px; } }
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .top-banner {
+    height: 650px; } }
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .top-banner {
+    height: 800px; } }
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  .top-banner {
+    height: 1200px; } }
+
+/*# sourceMappingURL=style.css.map */
