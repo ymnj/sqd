@@ -23,18 +23,55 @@
   </header>
 
   <div class="top-banner">
-    <div class="join-cta">Join Now</div>
+    <div class="join-button">Join Now</div>
   </div>
 
-  <div class="pure-g">
-    <div class="pure-u-1 pure-u-md-1-3"> ... </div>
-    <div class="pure-u-1 pure-u-md-1-3"> ... </div>
-    <div class="pure-u-1 pure-u-md-1-3"> ... </div>
-</div>
+  <div class="body-cta pure-g">
+    <section class="pure-u-1 pure-u-sm-1-3">
+      <div class="cta-wrap">
+        <h2>New Arrivals</h2>
+        <p>See our latest must haves >></p>
+      </div>
+    </section>
+    <section class="pure-u-1 pure-u-sm-1-3">
+      <div class="cta-wrap">
+        <h2>We Love</h2>
+        <p>Check out stylist favorites >></p>
+      </div>
+    </section>
+    <section class="pure-u-1 pure-u-sm-1-3">
+      <div class="cta-wrap">
+        <h2>Free Shipping</h2>
+        <p>On All 2016 collection >></p>
+      </div>
+    </section>
+  </div>
  
-
+  <div class="middle-banner">
+    
+  </div>
   
-
+  <div class="categories pure-g">
+    <div class="pure-u-1">
+      <h1>Browse our categories</h1>
+    </div>
+    <div class="product-wrap pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+      <img class="pure-img" src="./wp-content/themes/sqd/assets/images/cat-men.jpg" alt="">
+      <h2>Men</h2>
+    </div>
+    <div class="product-wrap pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+      <img class="pure-img" src="./wp-content/themes/sqd/assets/images/cat-women.jpg" alt="">
+      <h2>Women</h2>
+    </div>
+    <div class="product-wrap pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+      <img class="pure-img" src="./wp-content/themes/sqd/assets/images/cat-accessories.jpg" alt="">
+      <h2>Accessories</h2>
+    </div>
+    <div class="product-wrap pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+      <img class="pure-img" src="./wp-content/themes/sqd/assets/images/cat-grooming.jpg" alt="">
+      <h2>Grooming</h2>
+    </div>
+  </div>
 
   <?php wp_footer() ?>
 </body>

@@ -48,7 +48,7 @@ nav {
   position: relative;
   height: 960px;
 
-  .join-cta {
+  .join-button {
     position: absolute;
     top: 100%;
     left: 50%;
@@ -57,10 +57,60 @@ nav {
     text-transform: uppercase;
     background-color: #fff;
     display: inline-block;
-    padding: 20px;
+    padding: 20px 33px;
   }
 }
 
+//FRONT PAGE CALL TO ACTIONS
+
+.body-cta {
+  padding: 100px 0;
+  text-align: center;
+
+  section {
+  
+    @mixin section-cta-border($color){
+      h2 {
+        color: $color
+      };
+
+      .cta-wrap {
+        text-transform: uppercase;
+        margin: 0 30px;
+        padding: 57px 0 49px;
+        border-top: 1px solid $color;
+        border-bottom: 1px solid #D6D6D6;
+      }
+    }
+
+    &:nth-child(1) {
+      @include section-cta-border(#9CD4DB);
+    }
+    &:nth-child(2) {
+      @include section-cta-border(#D8C2Ba);
+    }
+    &:nth-child(3) {
+      @include section-cta-border(#FFA396);
+    }
+  }
+}
+
+
+.middle-banner {
+  margin: 0 30px;
+  background: url('./assets/images/woman-bag.jpg') no-repeat center center / cover;
+  height: 479px;
+}
+
+.categories {
+  text-align: center;
+  padding: 100px 30px 0;
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 100px;
+  }
+}
 
 
 
