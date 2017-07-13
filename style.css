@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans|Work+Sans:100,400,700");
+html, button, input, select, textarea,
+.pure-g [class*="pure-u"] {
+  /* Set your content font stack here: */
+  font-family: "Work Sans", sans-serif; }
+
 h1, h2, h3, h4, ul, li {
   margin: 0;
   padding: 0; }
@@ -6,78 +12,128 @@ header h1 {
   padding-top: 5%;
   text-align: center; }
 
-nav {
-  text-align: center;
-  padding: 20px 0; }
-  nav ul {
-    list-style-type: none; }
-  nav li {
-    display: inline-block; }
-    nav li:before {
-      content: "/"; }
-    nav li:first-of-type:before {
-      content: ""; }
-    nav li a {
-      text-decoration: none;
-      text-transform: uppercase;
-      padding: 27px; }
+.container {
+  margin: 0 10px 30px; }
 
 .top-banner {
   background: url("./assets/images/front-page-banner.jpg") no-repeat center center/cover;
   width: 100%;
   position: relative;
-  height: 960px; }
+  height: 350px; }
   .top-banner .join-button {
     position: absolute;
     top: 100%;
     left: 50%;
-    margin-left: -60px;
-    margin-top: -58px;
+    margin-left: -45px;
+    margin-top: -24px;
+    font-size: 12px;
     text-transform: uppercase;
     background-color: #fff;
     display: inline-block;
-    padding: 20px 33px; }
+    padding: 5px 15px; }
 
 .body-cta {
-  padding: 100px 0;
+  padding: 40px 0;
   text-align: center; }
-  .body-cta section:nth-child(1) h2 {
-    color: #9CD4DB; }
-  .body-cta section:nth-child(1) .cta-wrap {
-    text-transform: uppercase;
-    margin: 0 30px;
-    padding: 57px 0 49px;
-    border-top: 1px solid #9CD4DB;
-    border-bottom: 1px solid #D6D6D6; }
-  .body-cta section:nth-child(2) h2 {
-    color: #D8C2Ba; }
-  .body-cta section:nth-child(2) .cta-wrap {
-    text-transform: uppercase;
-    margin: 0 30px;
-    padding: 57px 0 49px;
-    border-top: 1px solid #D8C2Ba;
-    border-bottom: 1px solid #D6D6D6; }
-  .body-cta section:nth-child(3) h2 {
-    color: #FFA396; }
-  .body-cta section:nth-child(3) .cta-wrap {
-    text-transform: uppercase;
-    margin: 0 30px;
-    padding: 57px 0 49px;
-    border-top: 1px solid #FFA396;
-    border-bottom: 1px solid #D6D6D6; }
+  .body-cta section {
+    margin-bottom: 20px; }
+    .body-cta section:nth-child(1) h2 {
+      color: #9CD4DB; }
+    .body-cta section:nth-child(1) p {
+      font-size: 0.625rem;
+      margin: 20px 0 0; }
+    .body-cta section:nth-child(1) .cta-wrap {
+      text-transform: uppercase;
+      margin: 0 10px;
+      padding: 20px 0;
+      border-top: 1px solid #9CD4DB;
+      border-bottom: 1px solid #D6D6D6; }
+    .body-cta section:nth-child(2) h2 {
+      color: #D8C2Ba; }
+    .body-cta section:nth-child(2) p {
+      font-size: 0.625rem;
+      margin: 20px 0 0; }
+    .body-cta section:nth-child(2) .cta-wrap {
+      text-transform: uppercase;
+      margin: 0 10px;
+      padding: 20px 0;
+      border-top: 1px solid #D8C2Ba;
+      border-bottom: 1px solid #D6D6D6; }
+    .body-cta section:nth-child(3) h2 {
+      color: #FFA396; }
+    .body-cta section:nth-child(3) p {
+      font-size: 0.625rem;
+      margin: 20px 0 0; }
+    .body-cta section:nth-child(3) .cta-wrap {
+      text-transform: uppercase;
+      margin: 0 10px;
+      padding: 20px 0;
+      border-top: 1px solid #FFA396;
+      border-bottom: 1px solid #D6D6D6; }
 
 .middle-banner {
-  margin: 0 30px;
   background: url("./assets/images/woman-bag.jpg") no-repeat center center/cover;
   height: 479px; }
 
 .categories {
   text-align: center;
-  padding: 100px 30px 0; }
-  .categories h1 {
+  padding: 20px 0 0; }
+  .categories .product-wrap {
+    box-sizing: border-box;
+    border: 1px solid #F0F2F7; }
+  .categories .product-wrap:hover {
+    transition: background 500ms ease;
+    background-color: #FEEDE9; }
+    .categories .product-wrap:hover h3 {
+      transition: all 300ms ease;
+      color: #FFF;
+      background-color: #000; }
+  .categories .header {
+    margin: 30px 0;
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 100px; }
+    font-weight: 200;
+    font-size: 1.4rem; }
+    .categories .header:before {
+      content: "browse ";
+      font-weight: 700; }
+  .categories .product-wrap {
+    margin-top: 20px; }
+    .categories .product-wrap img {
+      margin: 0 auto; }
+    .categories .product-wrap .title {
+      margin: 35px 0; }
+    .categories .product-wrap h3 {
+      font-size: 0.9rem;
+      display: inline-block;
+      font-weight: 100;
+      padding: 15px 30px;
+      margin-bottom: 20px;
+      border: 3px solid black; }
+
+.sales .header {
+  margin: 30px 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 200;
+  font-size: 1.4rem; }
+  .sales .header:before {
+    content: "Products ";
+    font-weight: 700; }
+.sales .product-wrap {
+  background-color: red;
+  padding: 15px;
+  box-sizing: border-box; }
+  .sales .product-wrap img {
+    margin: 0 auto; }
+  .sales .product-wrap .title {
+    text-align: center;
+    margin: 25px;
+    font-size: 1.25rem;
+    font-weight: 100; }
+  .sales .product-wrap .prod-price {
+    text-align: center;
+    font-size: 1.5rem; }
 
 /* Mobile first queries */
 /* Larger than mobile */
