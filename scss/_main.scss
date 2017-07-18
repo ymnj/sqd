@@ -1,5 +1,6 @@
 
 $font-work: "Work Sans", sans-serif;
+$font-pt: 'PT Sans', sans-serif;
 
 html, button, input, select, textarea,
     .pure-g [class *= "pure-u"] {
@@ -46,21 +47,21 @@ header {
 //   }
 // }
 
-@mixin container-header($boldWord){
+
+
+.container {
+  margin: 0 10px 30px;
+}
+
+h1.header {
+  .bold-head {
+    font-weight: 700;
+  }
   margin: 30px 0;
   text-transform: uppercase;
   text-align: center;
   font-weight: 200;
   font-size: 1.4rem;
-  &:before {
-    content: $boldWord + ' ';
-    font-weight: 700;
-  }
-}
-
-.container {
-  margin: 0 10px 30px;
-
 }
 
 //FRONT PAGE BANNER
@@ -87,7 +88,7 @@ header {
 
 //FRONT PAGE CALL TO ACTIONS
 
-.body-cta {
+.main-cta {
   padding: 40px 0;
   text-align: center;
 
@@ -151,10 +152,6 @@ header {
     }
   }
 
-  .header {
-    @include container-header("browse");
-  }
-
   .product-wrap {
     margin-top: 20px;
     img {
@@ -175,9 +172,6 @@ header {
 }
 
 .sales {
-  .header {
-    @include container-header("Products");
-  }
 
   .product-wrap {
     background-color: red;
@@ -197,7 +191,27 @@ header {
       font-size: 1.5rem;
     }
   }
+}
 
+.main-testimonial {
+  padding: 30px 0;
+  background-color: #ECECEC;
+
+  .customer-img {
+    border-radius: 100%;
+    border: 6px solid #fff;
+    display: block;
+    width: 168px;
+    height: 168px;
+    margin: 50px auto;
+  }
+
+  .customer-testimonial {
+    padding: 0 30px;
+    text-align: center;
+    font-weight: 300;
+    font-family: $font-pt;
+  }
 }
 
 
