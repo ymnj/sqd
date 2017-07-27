@@ -142,6 +142,51 @@ h1.header {
     font-weight: 300;
     font-family: "PT Sans", sans-serif; }
 
+.latest-blogs article {
+  padding: 30px 0;
+  border-top: 1px solid #E6E6E6;
+  text-align: center;
+  position: relative; }
+  .latest-blogs article h1.header {
+    margin: 0; }
+.latest-blogs article:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50px;
+  background-color: black;
+  height: 6px;
+  transform: translateX(-50%); }
+.latest-blogs .blog-meta {
+  margin-bottom: 0;
+  font-weight: 100;
+  font-size: 0.875rem; }
+  .latest-blogs .blog-meta .blog-author, .latest-blogs .blog-meta .blog-comments {
+    font-weight: bold; }
+  .latest-blogs .blog-meta .blog-author:after {
+    content: "\00b7";
+    margin: 0 5px;
+    font-weight: bold;
+    color: grey; }
+.latest-blogs .blog-image {
+  width: 100%;
+  margin: 5% auto; }
+.latest-blogs .blog-title {
+  font-size: 0.9375rem; }
+.latest-blogs .blog-excerpt {
+  font-size: 0.875rem;
+  font-weight: 100; }
+.latest-blogs .blog-more-btn {
+  font-size: 0.875rem;
+  border: 2px solid black;
+  display: inline-block;
+  padding: 5px 15px;
+  transition: background-color 500ms ease, color 300ms ease; }
+  .latest-blogs .blog-more-btn:hover {
+    color: #fff;
+    background-color: black; }
+
 /* Mobile first queries */
 /* Larger than mobile */
 @media (min-width: 400px) {
