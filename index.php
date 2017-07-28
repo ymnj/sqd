@@ -12,16 +12,11 @@
   </div>
   
   <?php get_template_part('/sections/section','categories')?>
-  
   <?php get_template_part('/sections/section', 'sales') ?>
-
   <?php get_template_part('/sections/section', 'testimonials'); ?>
   <?php get_template_part('/sections/section', 'blog'); ?>
-
   <?php get_template_part('/sections/section', 'instagram'); ?>
-
   <?php get_template_part('/sections/section', 'social'); ?>
-
   <?php get_footer() ?>
-</body>
-</html>
+
+  

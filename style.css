@@ -237,7 +237,20 @@ h1.header {
         font-weight: 100; }
 
 #footer {
-  background-color: #181A1F; }
+  padding: 30px;
+  background-color: #181A1F;
+  color: #fff; }
+  #footer .widget-description h1 {
+    text-align: center; }
+  #footer .widget-description p {
+    font-size: 0.9375rem;
+    font-weight: 100; }
+  #footer h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.75rem; }
+    #footer h2 span.light {
+      font-weight: 100; }
 
 /* Mobile first queries */
 /* Larger than mobile */
