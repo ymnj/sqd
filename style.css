@@ -8,6 +8,9 @@ h1, h2, h3, h4, ul, li {
   margin: 0;
   padding: 0; }
 
+p {
+  line-height: 150%; }
+
 header h1 {
   padding-top: 5%;
   text-align: center; }
@@ -237,20 +240,36 @@ h1.header {
         font-weight: 100; }
 
 #footer {
-  padding: 30px;
+  padding-top: 30px;
   background-color: #181A1F;
   color: #fff; }
+  #footer section {
+    padding: 0 30px; }
+    #footer section ul {
+      list-style-type: none;
+      font-weight: 100; }
+      #footer section ul li {
+        margin: 10px 0;
+        font-size: 0.9375rem; }
   #footer .widget-description h1 {
     text-align: center; }
   #footer .widget-description p {
     font-size: 0.9375rem;
     font-weight: 100; }
   #footer h2 {
+    margin: 40px 0;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 0.75rem; }
+    letter-spacing: 1px;
+    font-size: 0.8rem; }
     #footer h2 span.light {
       font-weight: 100; }
+  #footer .sub-footer {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #202227;
+    font-size: 0.9375rem;
+    font-weight: 100; }
 
 /* Mobile first queries */
 /* Larger than mobile */

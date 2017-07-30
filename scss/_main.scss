@@ -13,6 +13,10 @@ h1,h2,h3,h4, ul, li {
   padding: 0;
 }
 
+p {
+  line-height: 150%; 
+}
+
 header {
   h1 {
     padding-top: 5%;
@@ -341,9 +345,22 @@ h1.header {
 }
 
 #footer {
-  padding: 30px;
+  padding-top: 30px;
   background-color: #181A1F;
   color: #fff;
+
+  section {
+    padding: 0 30px;
+    ul {
+      list-style-type: none;
+      font-weight: 100;
+
+      li {
+        margin: 10px 0;
+        font-size: 0.9375rem;
+      }
+    }
+  }
 
   .widget-description {
     h1 {
@@ -356,11 +373,21 @@ h1.header {
   }
 
   h2 {
+    margin: 40px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
     span.light {
       font-weight: 100;
     }
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 0.75rem;
+  }
+
+  .sub-footer {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: rgb(32, 34, 39);
+    font-size: 0.9375rem;
+    font-weight: 100;
   }
 }
