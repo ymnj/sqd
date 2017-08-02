@@ -15,6 +15,21 @@ header h1 {
   padding-top: 5%;
   text-align: center; }
 
+nav {
+  text-align: center;
+  padding: 20px 0; }
+  nav .pure-menu-heading, nav .pure-menu-link {
+    display: inline-block; }
+  nav li:before {
+    content: "/"; }
+  nav li:first-of-type:before {
+    content: ""; }
+  nav li a {
+    font-size: 0.7rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 27px; }
+
 .container {
   margin: 0 10px 30px; }
 

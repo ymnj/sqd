@@ -1,5 +1,13 @@
 <?php 
 
+/*
+  ===================================================
+    Theme support
+  ===================================================
+*/
+
+add_theme_support('post-thumbanils');
+
 function main_assets(){
   
   wp_register_style('normalize', get_template_directory_uri() . '/assets/css/normalize.css' );  
@@ -21,4 +29,26 @@ function main_assets(){
 
 add_action( 'wp_enqueue_scripts', 'main_assets' );
 
+
+/*
+  ===================================================
+    MENU
+  ===================================================
+*/
+
+function register_my_menu() {
+  register_nav_menu('main-menu',__( 'Main Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
+
+function add_classes_on_li($classes, $item, $args) {
+  $classes[] = 'pure-menu-item';
+  return $classes;
+}
+add_filter('nav_menu_css_class','add_classes_on_li',1,3);
+
+add_filter( 'nav_menu_link_attributes', function($atts) {
+        $atts['class'] = "pure-menu-link";
+        return $atts;
+}, 100, 1 );
 

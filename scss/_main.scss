@@ -1,4 +1,5 @@
 
+
 $font-work: "Work Sans", sans-serif;
 $font-pt: 'PT Sans', sans-serif;
 
@@ -36,30 +37,31 @@ header {
 
 //NAVIGATION
 
-// nav {
-//   text-align: center;
-//   padding: 20px 0;
+nav {
+  text-align: center;
+  padding: 20px 0;
 
-//   ul {
-//     list-style-type: none;
-//   }
+  .pure-menu-heading, .pure-menu-link {
+    display: inline-block;
+  }
 
-//   li {
-//     display: inline-block;
-//     &:before {
-//       content: "/";
-//     }
-//     &:first-of-type:before {
-//       content: "";
-//     }
+  li {
+    
+    &:before {
+      content: "/";
+    }
+    &:first-of-type:before {
+      content: "";
+    }
 
-//     a {
-//       text-decoration: none;
-//       text-transform: uppercase;
-//       padding: 27px;
-//     }
-//   }
-// }
+    a {
+      font-size: 0.7rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 27px;
+    }
+  }
+}
 
 
 
