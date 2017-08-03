@@ -1,0 +1,27 @@
+//NAVIGATION
+
+nav {
+  text-align: center;
+  padding: 20px 0;
+
+  .pure-menu-heading, .pure-menu-link {
+    display: inline-block;
+  }
+
+  li {
+    
+    &:before {
+      content: "/";
+    }
+    &:first-of-type:before {
+      content: "";
+    }
+
+    a {
+      font-size: 0.7rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 27px;
+    }
+  }
+}

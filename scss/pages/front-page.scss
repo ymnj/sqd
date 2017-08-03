@@ -1,0 +1,314 @@
+//FRONT PAGE BANNER
+
+.top-banner {
+  background: url('./assets/images/front-page-banner.jpg') no-repeat center center / cover;
+  width: 100%;
+  position: relative;
+  height: 350px;
+
+  .join-button {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -45px;
+    margin-top: -24px;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: #fff;
+    display: inline-block;
+    padding: 5px 15px;
+  }
+}
+
+//FRONT PAGE CALL TO ACTIONS
+
+.main-cta {
+  padding: 40px 0;
+  text-align: center;
+
+  section {
+
+    margin-bottom: 20px;
+  
+    @mixin section-cta-border($color){
+      h2 {
+        color: $color
+      };
+
+      p {
+        font-size: 0.625rem;
+        margin: 20px 0 0;
+      }
+
+      .cta-wrap {
+        text-transform: uppercase;
+        margin: 0 10px;
+        padding: 20px 0;
+        border-top: 1px solid $color;
+        border-bottom: 1px solid #D6D6D6;
+      }
+    }
+
+    &:nth-child(1) {
+      @include section-cta-border(#9CD4DB);
+    }
+    &:nth-child(2) {
+      @include section-cta-border(#D8C2Ba);
+    }
+    &:nth-child(3) {
+      @include section-cta-border(#FFA396);
+    }
+  }
+}
+
+
+.middle-banner {
+  background: url('./assets/images/woman-bag.jpg') no-repeat center center / cover;
+  height: 479px;
+}
+
+.categories {
+  text-align: center;
+  padding: 20px 0 0;
+
+  .product-wrap {
+    box-sizing: border-box;
+    border: 1px solid #F0F2F7;
+  }
+
+  .product-wrap:hover{
+    transition: background 500ms ease;
+    background-color: #FEEDE9;
+    h3 {
+      transition: all 300ms ease;
+      color: #FFF;
+      background-color: #000;
+    }
+  }
+
+  .product-wrap {
+    margin-top: 20px;
+    img {
+      margin: 0 auto;
+    }
+    .title {
+      margin: 35px 0;
+    }
+    h3 {
+      font-size: 0.9rem;
+      display: inline-block;
+      font-weight: 100;
+      padding: 15px 30px;
+      margin-bottom: 20px;
+      border: 3px solid black;
+    }
+  }
+}
+
+.sales {
+  .product-wrap {
+    padding: 15px;
+    box-sizing: border-box;
+    img {
+      margin: 0 auto;
+    }
+    .title {
+      text-align: center;
+      margin: 25px;
+      font-size: 1.25rem;
+      font-weight: 100;
+    }
+    .prod-price {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.main-testimonial {
+  padding: 30px 0;
+  background-color: #ECECEC;
+
+  .customer-img {
+    border-radius: 100%;
+    border: 6px solid #fff;
+    display: block;
+    width: 168px;
+    height: 168px;
+    margin: 50px auto;
+  }
+
+  .customer-testimonial {
+    padding: 0 30px;
+    text-align: center;
+    font-weight: 300;
+    font-family: $font-lato;
+  }
+}
+
+.latest-blogs {
+
+  article {
+    padding: 30px 0;
+    border-top: 1px solid #E6E6E6;
+    text-align: center;
+    position: relative;
+
+    h1.header {
+      margin: 0;
+    }
+  }
+
+  article:before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    width: 50px;
+    background-color: black;
+    height: 6px;
+    transform: translateX(-50%);
+  }
+  .blog-meta {
+    margin-bottom: 0;
+    font-weight: 100;
+    font-size: 0.875rem;
+
+    .blog-author, .blog-comments {
+      font-weight: bold;
+    }
+
+    .blog-author:after {
+      content: "\00b7";
+      margin: 0 5px;
+      font-weight: bold;
+      color: grey;
+    }
+  }
+  .blog-image {
+    width: 100%;
+    margin: 5% auto;
+  }
+  .blog-title {
+    font-size: 0.9375rem;
+  }
+  .blog-excerpt {
+    font-size: 0.875rem;
+    font-weight: 100;
+    font-family: $font-lato;
+  }
+  .blog-more-btn {
+    font-size: 0.875rem;
+    border: 2px solid black;
+    display: inline-block;
+    padding: 5px 15px;
+    @include btn-trans;
+  }
+}
+
+.instagram-wrap {
+  .ig-block img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.main-social {
+  text-align: center;
+  background-color: #E7F5F7;
+
+  .subscribe {
+    p {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-family: $font-work;
+    }
+    form {
+      margin: 32px 0;
+      input[type="text"]{
+        border: none;
+        padding: 0;
+        height: 42px;
+        text-align: center;
+        font-weight: 100;
+        font-family: $font-work;
+        font-size: 0.875em;
+      }
+      input[type="submit"]{
+        font-family: $font-work;
+        font-size: 0.875em;
+        border: 3px solid black;
+        background-color: transparent;
+        letter-spacing: 1px;
+        padding: 10px 15px;
+        @include btn-trans;
+      }
+    }
+  }
+  .media-icons {
+    margin-bottom: 30px;
+    li, .indiv-icon {
+      display: inline-block;
+    }
+    .indiv-icon {
+      margin: 3px;
+      width: 24px;
+      height: 24px;
+      border-radius: 100%;
+      border: 2px solid black;
+      @include btn-trans;
+      i {
+        font-size: 0.625rem;
+        font-weight: 100;
+      }
+    }
+  }
+}
+
+#footer {
+  padding-top: 30px;
+  background-color: #181A1F;
+  color: #fff;
+
+  section {
+    padding: 0 30px;
+    ul {
+      list-style-type: none;
+      font-weight: 100;
+
+      li {
+        margin: 10px 0;
+        font-size: 0.9375rem;
+      }
+    }
+  }
+
+  .widget-description {
+    h1 {
+      text-align: center;
+    }
+    p {
+      font-size: 0.9375rem;
+      font-weight: 100;
+    }
+  }
+
+  h2 {
+    margin: 40px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    span.light {
+      font-weight: 100;
+    }
+  }
+
+  .sub-footer {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: rgb(32, 34, 39);
+    font-size: 0.9375rem;
+    font-weight: 100;
+  }
+}

@@ -1,4 +1,19 @@
-@import url("https://fonts.googleapis.com/css?family=PT+Sans|Work+Sans:100,400,700");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans|Lato:300,400|Work+Sans:100,400,700");
+nav {
+  text-align: center;
+  padding: 20px 0; }
+  nav .pure-menu-heading, nav .pure-menu-link {
+    display: inline-block; }
+  nav li:before {
+    content: "/"; }
+  nav li:first-of-type:before {
+    content: ""; }
+  nav li a {
+    font-size: 0.7rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 27px; }
+
 html, button, input, select, textarea,
 .pure-g [class*="pure-u"] {
   /* Set your content font stack here: */
@@ -15,23 +30,12 @@ header h1 {
   padding-top: 5%;
   text-align: center; }
 
-nav {
-  text-align: center;
-  padding: 20px 0; }
-  nav .pure-menu-heading, nav .pure-menu-link {
-    display: inline-block; }
-  nav li:before {
-    content: "/"; }
-  nav li:first-of-type:before {
-    content: ""; }
-  nav li a {
-    font-size: 0.7rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 27px; }
-
 .container {
+  text-align: center;
   margin: 0 10px 30px; }
+  .container .page-title {
+    margin-bottom: 25px;
+    font-size: 1.4375rem; }
 
 h1.header {
   margin: 30px 0;
@@ -42,6 +46,27 @@ h1.header {
   h1.header .bold-head {
     font-weight: 700; }
 
+/* Mobile first queries */
+/* Larger than mobile */
+@media (min-width: 400px) {
+  .top-banner {
+    height: 350px; } }
+/* Larger than phablet */
+@media (min-width: 550px) {
+  .top-banner {
+    height: 500px; } }
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .top-banner {
+    height: 650px; } }
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .top-banner {
+    height: 800px; } }
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  .top-banner {
+    height: 1200px; } }
 .top-banner {
   background: url("./assets/images/front-page-banner.jpg") no-repeat center center/cover;
   width: 100%;
@@ -157,7 +182,7 @@ h1.header {
     padding: 0 30px;
     text-align: center;
     font-weight: 300;
-    font-family: "PT Sans", sans-serif; }
+    font-family: "Lato", sans-serif; }
 
 .latest-blogs article {
   padding: 30px 0;
@@ -193,7 +218,8 @@ h1.header {
   font-size: 0.9375rem; }
 .latest-blogs .blog-excerpt {
   font-size: 0.875rem;
-  font-weight: 100; }
+  font-weight: 100;
+  font-family: "Lato", sans-serif; }
 .latest-blogs .blog-more-btn {
   font-size: 0.875rem;
   border: 2px solid black;
@@ -286,26 +312,23 @@ h1.header {
     font-size: 0.9375rem;
     font-weight: 100; }
 
-/* Mobile first queries */
-/* Larger than mobile */
-@media (min-width: 400px) {
-  .top-banner {
-    height: 350px; } }
-/* Larger than phablet */
-@media (min-width: 550px) {
-  .top-banner {
-    height: 500px; } }
-/* Larger than tablet */
-@media (min-width: 750px) {
-  .top-banner {
-    height: 650px; } }
-/* Larger than desktop */
-@media (min-width: 1000px) {
-  .top-banner {
-    height: 800px; } }
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {
-  .top-banner {
-    height: 1200px; } }
+.about-container .about-intro {
+  font-weight: 100;
+  padding-bottom: 20px; }
+  .about-container .about-intro img {
+    width: 100%; }
+  .about-container .about-intro section {
+    font-family: "Lato", sans-serif;
+    background-color: #eaeaea;
+    text-align: left;
+    padding: 0 20px; }
+    .about-container .about-intro section h2 {
+      padding-top: 16px;
+      font-size: 0.9375rem;
+      font-weight: 100;
+      text-transform: uppercase; }
+.about-container .circle-stats {
+  padding: 34px 0;
+  border-top: 1px solid #E6E6E6; }
 
 /*# sourceMappingURL=style.css.map */
