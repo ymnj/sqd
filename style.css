@@ -284,14 +284,14 @@ h1.header {
   padding-top: 30px;
   background-color: #181A1F;
   color: #fff; }
-  #footer section {
+  #footer section > .widget-pad {
     padding: 0 30px; }
-    #footer section ul {
-      list-style-type: none;
-      font-weight: 100; }
-      #footer section ul li {
-        margin: 10px 0;
-        font-size: 0.9375rem; }
+  #footer section ul {
+    list-style-type: none;
+    font-weight: 100; }
+    #footer section ul li {
+      margin: 10px 0;
+      font-size: 0.9375rem; }
   #footer .widget-description h1 {
     text-align: center; }
   #footer .widget-description p {
@@ -328,7 +328,8 @@ h1.header {
       font-weight: 100;
       text-transform: uppercase; }
 .about-container .circle-stats {
-  padding: 34px 0;
   border-top: 1px solid #E6E6E6; }
+  .about-container .circle-stats #test-1 {
+    width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

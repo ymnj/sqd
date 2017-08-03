@@ -13,7 +13,8 @@ function main_assets(){
   wp_register_style('normalize', get_template_directory_uri() . '/assets/css/normalize.css' );  
   wp_register_style('pure', get_template_directory_uri() . '/assets/css/pure.css' );
   wp_register_style('pure-responsive', get_template_directory_uri() . '/assets/css/pure-responsive.css', array('pure'));
-  wp_register_style('pure-offsets', get_template_directory_uri() . '/assets/css/pure-offsets.css', array('pure'))  ;
+  wp_register_style('pure-offsets', get_template_directory_uri() . '/assets/css/pure-offsets.css', array('pure'));
+  wp_register_style('circliful-css', get_template_directory_uri() . '/assets/css/circliful-css.css', array())  ;
   wp_register_style('social-icons', get_template_directory_uri() . '/assets/lib/fontello/css/face.css');
   wp_register_style('main-styles', get_stylesheet_uri(), array() );
 
@@ -26,6 +27,7 @@ function main_assets(){
   wp_enqueue_style('pure-responsive');
   wp_enqueue_style('pure-offsets');
   wp_enqueue_style('social-icons');
+  wp_enqueue_style('circliful-css');
   wp_enqueue_style('main-styles');
   wp_enqueue_script('jquery');
   wp_enqueue_script('countTo');
