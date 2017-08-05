@@ -2,7 +2,7 @@
 Error: Undefined variable: "$font-lato".
         on line 10 of scss/pages/about-page.scss
 
-5:     padding-bottom: 20px;
+5:     margin-bottom: 40px;
 6:     img {
 7:       width: 100%;
 8:     }
@@ -10,9 +10,9 @@ Error: Undefined variable: "$font-lato".
 10:       font-family: $font-lato;
 11:       background-color: #eaeaea;
 12:       text-align: left;
-13:       padding: 0 20px;
+13:       padding:  16px 20px;
 14:       h2 {
-15:       padding-top: 16px;
+15:       font-size: 0.9375rem;
 
 Backtrace:
 scss/pages/about-page.scss:10
@@ -89,4 +89,4 @@ scss/pages/about-page.scss:10
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$font-lato\".\A         on line 10 of scss/pages/about-page.scss\A \A 5:     padding-bottom: 20px;\A 6:     img {\A 7:       width: 100%;\A 8:     }\A 9:     section {\A 10:       font-family: $font-lato;\A 11:       background-color: #eaeaea;\A 12:       text-align: left;\A 13:       padding: 0 20px;\A 14:       h2 {\A 15:       padding-top: 16px;"; }
+  content: "Error: Undefined variable: \"$font-lato\".\A         on line 10 of scss/pages/about-page.scss\A \A 5:     margin-bottom: 40px;\A 6:     img {\A 7:       width: 100%;\A 8:     }\A 9:     section {\A 10:       font-family: $font-lato;\A 11:       background-color: #eaeaea;\A 12:       text-align: left;\A 13:       padding:  16px 20px;\A 14:       h2 {\A 15:       font-size: 0.9375rem;"; }

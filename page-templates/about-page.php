@@ -27,16 +27,24 @@ get_header(); ?>
 
   <div class="circle-stats pure-g">
     <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
-      <div id="test-1"></div>
+      <div id="products">
+        <span class="timer"></span>
+      </div>
     </div>
     <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
-      <div id="test-2"></div>
+      <div id="stylists">
+        <span class="timer"></span>
+      </div>
     </div>
     <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
-      <div id="test-3"></div>
+      <div id="locations">
+        <span class="timer"></span>
+      </div>
     </div>
     <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
-      <div id="test-4"></div>
+      <div id="members">
+        <span class="timer"></span>
+      </div>
     </div>
   </div>
 </div>

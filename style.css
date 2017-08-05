@@ -314,22 +314,26 @@ h1.header {
 
 .about-container .about-intro {
   font-weight: 100;
-  padding-bottom: 20px; }
+  margin-bottom: 40px; }
   .about-container .about-intro img {
     width: 100%; }
   .about-container .about-intro section {
     font-family: "Lato", sans-serif;
     background-color: #eaeaea;
     text-align: left;
-    padding: 0 20px; }
+    padding: 16px 20px; }
     .about-container .about-intro section h2 {
-      padding-top: 16px;
       font-size: 0.9375rem;
       font-weight: 100;
       text-transform: uppercase; }
 .about-container .circle-stats {
-  border-top: 1px solid #E6E6E6; }
-  .about-container .circle-stats #test-1 {
-    width: 100%; }
+  border-top: 1px solid #E6E6E6;
+  padding-bottom: 16px; }
+  .about-container .circle-stats .timer tspan.number {
+    font-size: 2rem;
+    font-weight: 700; }
+  .about-container .circle-stats text {
+    font-size: 0.875rem;
+    font-weight: 700; }
 
 /*# sourceMappingURL=style.css.map */
